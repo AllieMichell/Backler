@@ -30,7 +30,7 @@
     "gsap-react-plugin": "^1.0.2",
     "js-file-download": "^0.4.8",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.4.6",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.1",
     "node-sass": "^4.11.0",
     "notistack": "^0.8.9",
