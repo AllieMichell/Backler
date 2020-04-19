@@ -16,7 +16,7 @@ const app = express();
 
 // Mongoose conectionvaria
 mongoose.connect(
-  `${process.env.DB_HOST}`,
+  `${process.env.DB_HOST}backler?authSource=admin`,
   {
     useNewUrlParser: true, 
     useCreateIndex: true
