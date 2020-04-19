@@ -1,0 +1,34 @@
+
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Input from '@material-ui/core/Input';
+
+
+
+export default function InputDir() { 
+    const useStyles = makeStyles(theme => ({
+  container: {
+    display: 'flex',
+    flexWrap: 'wrap',
+  },
+  input: {
+    margin: theme.spacing(1),
+  },
+}));
+
+  const classes = useStyles();
+ 
+  return (
+    <div className={classes.container}>
+      
+      <Input
+        defaultValue="Error"
+        className={classes.input}
+        error
+        inputProps={{
+          'aria-label': 'description',
+        }}
+      />
+    </div>
+  );
+}

@@ -218,12 +218,12 @@ changeShow(e){
        
         return(
             <div>
-                <h1 style={{color:'#424242', fontSize:35}}>Admin Panel <SettingsIcon style={{fontSize:30, color:'#088A68'}}/></h1>
+                <h1 style={{color:'#fffff', fontSize:35}}>Admin Panel <SettingsIcon style={{fontSize:30, color:'#ffff'}}/></h1>
                 <div style={{background:'white', borderRadius:10}}>
                 
                 <Grid container justify='center' spacing={40} style={{margin:10,}}>
                 <Grid item container justify='center' xs={12} sm={3} md={4}>
-                    <Typography style={{fontSize:20, textAlign:'center'}}><GetAppIcon/> Backup Directory</Typography>
+                    <Typography style={{fontSize:20, textAlign:'center', color:'white'}}><GetAppIcon/> Backup Directory</Typography>
                     </Grid>
                     <Grid item container  xs={12} sm={8} md={4}>
                         {/* <InputDir/> */}

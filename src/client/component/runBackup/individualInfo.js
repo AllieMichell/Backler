@@ -232,7 +232,7 @@ class IndividualBackup extends Component {
 
   componentDidMount() {
     const idproject = this.props.match.params.idproject;
-    fetch(`http://${process.env.IP_API}/Buckler/api/projects/project/${idproject}`)
+    fetch(`http://${process.env.IP_API}/backler/api/projects/project/${idproject}`)
     // fetch(`http://localhost:3100/Buckler/api/projects/project/${idproject}`)
       .then(response => response.json())
       .then((project) => {
@@ -300,7 +300,7 @@ class IndividualBackup extends Component {
   }
 
   saveEditHandle(e){
-    axios.put(`http://${process.env.IP_API}/buckler/api/projects/updateProject/${this.state.project_Id}`, {
+    axios.put(`http://${process.env.IP_API}/backler/api/projects/updateProject/${this.state.project_Id}`, {
     _id: this.state.project_Id,
     dbType:this.state.dbType2,
     dbIp:this.state.dbIp,
@@ -340,7 +340,7 @@ class IndividualBackup extends Component {
       projectId: this.state.project_Id,
     };
    const idproject = this.state.project_Id;
-    axios.get(`http://${process.env.IP_API}/buckler/api/functions/runbyId/${idproject}`)
+    axios.get(`http://${process.env.IP_API}/backler/api/functions/runbyId/${idproject}`)
     .then( res => {
       this.setState({
         backuping:false,
@@ -387,7 +387,7 @@ class IndividualBackup extends Component {
       testing: !testing
     })
      const idproject = this.props.match.params.idproject;
-    axios.get(`http://${process.env.IP_API}/buckler/api/functions/testConnection/${idproject}`)
+    axios.get(`http://${process.env.IP_API}/backler/api/functions/testConnection/${idproject}`)
     .then(res => {
      
       if(res.data == "Success Connection\n" || "Success connection\n"){

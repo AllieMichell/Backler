@@ -1,0 +1,10 @@
+.inputDir{
+    margin:0px;
+    width:400px;
+    color:green;
+}
+@media only screen and (max-width: 695px) {
+    .inputDir {
+      width:200px;
+    }
+  }

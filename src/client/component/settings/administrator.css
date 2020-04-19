@@ -1,7 +1,7 @@
 .inputDir{
     margin:0px;
     width:400px;
-    color:green;
+    color:white;
 }
 @media only screen and (max-width: 695px) {
     .inputDir {

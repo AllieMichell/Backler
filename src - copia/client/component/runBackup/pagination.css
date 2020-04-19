@@ -1,0 +1,21 @@
+.Grid{
+    margin: 15px;
+    margin-bottom: 70px;
+    
+}
+
+
+.button{
+    color:white;
+    background: rgb(1, 141, 122);
+    padding:2px;
+    margin:7px;
+}
+
+.SnackBar{
+    position: fixed;
+    z-index: 3;
+    bottom: 1vh;
+    right: 1vw;
+    background:green;
+}

@@ -27,20 +27,22 @@ import StorageIcon from '@material-ui/icons/Storage';
 import './drawer.css'
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import Tooltip from '@material-ui/core/Tooltip';
 
 
 
 
 
 
-const drawerWidth = 240;
+
+const drawerWidth = 60;
 
 const styles = theme => ({
   root: {
     display: 'flex',
   },
   appBar: {
-    background:'linear-gradient(to right, #064040, #088A68)',
+    background:'linear-gradient(to right, #141e30, #243b55)',
     zIndex: theme.zIndex.drawer + 1
 
   },
@@ -98,6 +100,7 @@ const styles = theme => ({
   },
   drawerPaper: {
     width: drawerWidth,
+    background:'#141E30'
   },
   toolbar:theme.mixins.toolbar
   ,
@@ -268,9 +271,8 @@ class PermanentDrawerLeft extends Component {
       
         <AppBar className={classes.appBar} position="fixed" >
           <Toolbar>
-            <img src={logo} alt="Logo" width="30" height="30" className="iconLogo" />
             <Typography className={classes.title} variant="h6" color="inherit" noWrap>
-              uckler
+              Backer
             </Typography>
             <div className={classes.grow} />
             {/* <div className={classes.search}>
@@ -303,25 +305,25 @@ class PermanentDrawerLeft extends Component {
                 component={Link}
                 to='/home'
                 >
-                <ListItemIcon>  <HomeIcon/> </ListItemIcon>
-                <ListItemText primary='Home'/>
-                </ListItem>
+                  <Tooltip title="Home" placement="right-start">
+                <ListItemIcon style={{color:'white'}}>  <HomeIcon/> </ListItemIcon>
+               </Tooltip> </ListItem>
                 <ListItem
                 button
                 component={Link}
                 to='/databases'
                 >
-                <ListItemIcon>  <StorageIcon/> </ListItemIcon>
-                <ListItemText primary='Databases'/>
-                </ListItem>
+                  <Tooltip title="Databases" placement="right-start">
+                <ListItemIcon style={{color:'white'}}>  <StorageIcon/> </ListItemIcon>
+               </Tooltip> </ListItem>
                 <ListItem
                 button
                 component={Link}
                 to='/admin-panel'
                 >
-                <ListItemIcon>  <SettingsIcon/> </ListItemIcon>
-                <ListItemText primary='Settings'/>
-                </ListItem>
+                  <Tooltip title="Admin panel" placement="right-start">
+                <ListItemIcon style={{color:'white'}} >  <SettingsIcon/> </ListItemIcon>
+                </Tooltip></ListItem>
               </List>
         </Drawer>
         {/* <BottomNavigation className='bottom' position='fixed'>
