@@ -178,13 +178,11 @@ changeShow(e){
        
         return(
             <div>
-                <h1 style={{color:'#424242', fontSize:35}}>Admin Panel <SettingsIcon style={{fontSize:30, color:'#088A68'}}/></h1>
+                <h1 style={{color:'white', fontSize:35}}>Settings<SettingsIcon style={{fontSize:30, color:'white'}}/></h1>
                 <div style={{background:'', borderRadius:10}}>
                 
                 <Grid container justify='center' spacing={40} style={{margin:10,}}>
-                <Grid item container justify='center' xs={12} sm={3} md={4}>
-                    <Typography style={{fontSize:20, textAlign:'center'}}><GetAppIcon/> Backup Directory</Typography>
-                    </Grid>
+
                     <Grid item container  xs={12} sm={8} md={4}>
                         {/* <InputDir/> */}
                         {
@@ -200,12 +198,13 @@ changeShow(e){
                             className='inputDir'
                             placeholder="/usr/local/.."
                             margin="normal"
+                            style={{color:'white'}}
                             InputLabelProps={{
                             shrink: true,
                             }}
                         />
                         
-                         <Button justify='right' href="#text-buttons" style={{color:'#088A68'}}
+                         <Button justify='right' href="#text-buttons" style={{color:'white', background:'red'}}
                          onClick = {this.edit}
                          >
                                 Edit

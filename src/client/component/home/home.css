@@ -20,7 +20,14 @@
     stroke-width: 1;
     stroke: #3c3c3c;
 }
-  
+
+.float{
+    position: fixed;
+    bottom:380px;
+    left:650px;
+    color:white;
+
+}
 #wave {
     fill: none;
     stroke-width: 4;
@@ -31,8 +38,8 @@
 .content{
     flex-grow: 1;
     padding-top:50px;
-    padding-right:100px;
-    padding-left:18%;
+    padding-right:80px;
+    padding-left:8%;
 }
 .bottom{
     position: fixed;
@@ -62,18 +69,16 @@
     background:#004d40;
 }
 .firstContainer{
-    background: honeydew;
+    background:none;
     padding:30px;
     margin:10px;
+    background-color: none;
 }
 .firstContainer h3{
     font-size: 70px;
     color:rgb(34, 34, 34);
     text-align: left;
-}
-.animation{
-    box-shadow: 0px 0px 28px -9px rgba(0,0,0,0.75);
-
+   
 }
 .text-movil{
     display:none;
@@ -127,6 +132,9 @@
     .text-desktop{
         display:none;
     }
+
+    
+
   }
   @media only screen and (max-width: 730px) {
     .content {

@@ -68,7 +68,7 @@ const styles = theme => ({
     color: '#ffffff'
   },
   headingText: {
-    background: '#00695c',
+    background: '#141E30',
     // columnCount: 3,
     padding: '10px',
     textAlign: '-webkit-center',
@@ -84,11 +84,7 @@ const LogsPanel = props => (
   <div>
     <Grid container spacing={24}>
       <Grid item xs={12}>
-        <div>
-          <Typography component="h2" variant="display1">
-          Last Backups
-          </Typography>
-        </div>
+        
       </Grid>
 
       <Grid item xs={12}>
