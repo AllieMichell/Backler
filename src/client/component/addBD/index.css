@@ -1,0 +1,15 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.form{
+    background: white ;
+    padding: 30px;
+    border-radius: 5px;
+    width: 700px !important;
+}
+.field{
+    width: 300px;
+    margin: 10px !important;
+}

@@ -28,6 +28,9 @@ import './drawer.css'
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import Tooltip from '@material-ui/core/Tooltip';
+import AddBoxIcon from '@material-ui/icons/AddBox';
+
+
 
 
 
@@ -323,6 +326,15 @@ class PermanentDrawerLeft extends Component {
                 >
                   <Tooltip title="Admin panel" placement="right-start">
                 <ListItemIcon style={{color:'white'}} >  <SettingsIcon/> </ListItemIcon>
+                </Tooltip></ListItem>
+
+                <ListItem
+                button
+                component={Link}
+                to='/add'
+                >
+                  <Tooltip title="Add a new database" placement="right-start">
+                <ListItemIcon style={{color:'white'}} > <AddBoxIcon/> </ListItemIcon>
                 </Tooltip></ListItem>
               </List>
         </Drawer>

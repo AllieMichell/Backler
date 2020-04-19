@@ -17,6 +17,7 @@ import RunIndividual from './runBackup/runIndividualBackup';
 import Admin from './settings/administrator'
 import Admin2 from './settings/administrator2'
 import TableLogs from './runBackup/logs-table'
+import addComponent from './addBD/index';
 // import Loader from './loader/loader'
 
 
@@ -43,6 +44,7 @@ const Router = () => (
                 <Route path="/admin-panel" component={Admin} />
                 <Route path ="/admin-panel2" component={Admin2}/>
                 <Route path="/tablelogs" component={TableLogs}/>
+                <Route path="/add" component={addComponent}/>
                 {/* <Route path="/loader" component={Loader}/> */}
               </Switch>
             </div>

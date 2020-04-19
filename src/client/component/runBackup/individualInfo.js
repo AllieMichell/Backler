@@ -322,7 +322,7 @@ class IndividualBackup extends Component {
     
     })
     .then(res => {
-      
+      console.log(res)
     })
     this.closeHandle();
     location.reload();
