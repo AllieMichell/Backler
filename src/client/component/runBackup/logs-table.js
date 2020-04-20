@@ -47,7 +47,7 @@ export default class TableLogs extends Component{
     componentDidMount(){
        
 
-        axios.get(`http://${process.env.IP_API}/buckler/api/logs/logsName/${this.props.namep}`)
+        axios.get(`http://${process.env.IP_API}/backler/api/logs/logsName/${this.props.namep}`)
         .then(response => {
             this.setState({
                 logs:response.data,
