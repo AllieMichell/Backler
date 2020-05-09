@@ -300,6 +300,9 @@ Database Name, Project Name, Database Ip, Database type, Database password, serv
 - Poder registrar configuración de otros tipos de bd  como oracle
 - Añadir seguridad al acceso de la información de las bases de datos
 - Realizar una versión de escritorio de dicha aplicación que se conecte con la versión web
+### Recursos de apoyo
+- [Backler](http://161.35.4.198:3100/) Link de la aplicación en producción 
+- [Backler Video](https://www.youtube.com/watch?v=8R-KfVPc9fA&t=112s) Link de video de apoyo aplicación
 ## Créditos
 ### Alummnos
 Jose Angel Abner Anzures Estrada  
