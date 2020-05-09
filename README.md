@@ -91,7 +91,7 @@ Posterior a ello ya teniendo la configuración de Jenkins, lo que restaría es c
 Backler tiene un diferentes APIs con las cuales poedmos probar manualmente el funcionamiento de nuestros controlladores. 
 - ### Logs
 APIs del controllador de los Logs de los respaldos de los proyectos  
-POST http://127.0.0.1:3100/backler/api/logs/newLogs | API Crear un nuevo registro
+`POST` http://127.0.0.1:3100/backler/api/logs/newLogs | API Crear un nuevo registro
 ```JSON
  {
     "projectName": "Jenkins User",
@@ -104,9 +104,9 @@ POST http://127.0.0.1:3100/backler/api/logs/newLogs | API Crear un nuevo registr
     "method": "True"
 }
 ```
-GET http://127.0.0.1:3100/backler/api/logs/logsList | API Lista de los logs  
-GET http://127.0.0.1:3100/backler/api/logs/getLatest | API Lista de los ultimos logs   
-PUT http://127.0.0.1:3100/bAckler/api/logs/updateLogs | API Actualizar algún registro
+`GET` http://127.0.0.1:3100/backler/api/logs/logsList | API Lista de los logs  
+`GET` http://127.0.0.1:3100/backler/api/logs/getLatest | API Lista de los ultimos logs   
+`PUT` http://127.0.0.1:3100/bAckler/api/logs/updateLogs | API Actualizar algún registro
 ```JSON
  {
     "projectName": "Jenkins User",
@@ -119,7 +119,7 @@ PUT http://127.0.0.1:3100/bAckler/api/logs/updateLogs | API Actualizar algún re
     "method": "True"
 }
 ```
-DELETE http://127.0.0.1:3100/bAckler/api/logs/deleteLogs | API Para eliminar logs, por el ID
+`DELETE` http://127.0.0.1:3100/bAckler/api/logs/deleteLogs | API Para eliminar logs, por el ID
 ```JSON
 {
     "_id": "5c4f2270ef25fb3ba441f54b"
@@ -127,7 +127,7 @@ DELETE http://127.0.0.1:3100/bAckler/api/logs/deleteLogs | API Para eliminar log
 ```
 - ### Projects  
 APIs del controllador de los Proyectos a respaldar mediante Backler  
-POST http://127.0.0.1:3100/backler/api/projects/newProject | API para registro de un nuevo proyecto a respaldar  
+`POST` http://127.0.0.1:3100/backler/api/projects/newProject | API para registro de un nuevo proyecto a respaldar  
 ```JSON
 {
     "serverName": "ubuntu",
@@ -149,10 +149,10 @@ POST http://127.0.0.1:3100/backler/api/projects/newProject | API para registro d
     "projectName": "HandNote"
 }
 ```
-GET http://127.0.0.1:3100/backler/api/projects/projectsList | API Lista de todos los proyectos a respaldar  
-GET http://127.0.0.1:3100/backler/api/projects/project/5d6ed24e955c1d14ec4d26d8 | API Buscar proyecto por el ID  
-GET http://127.0.0.1:3100/backler/api/projects/nameP/HandNote | API Buscar proyecto por el nombre  
-PUT http://127.0.0.1:3100/backler/api/projects/updateProject | API Actualizar algún proyecto
+`GET` http://127.0.0.1:3100/backler/api/projects/projectsList | API Lista de todos los proyectos a respaldar  
+`GET` http://127.0.0.1:3100/backler/api/projects/project/5d6ed24e955c1d14ec4d26d8 | API Buscar proyecto por el ID  
+`GET` http://127.0.0.1:3100/backler/api/projects/nameP/HandNote | API Buscar proyecto por el nombre  
+`PUT` http://127.0.0.1:3100/backler/api/projects/updateProject | API Actualizar algún proyecto
 ```JSON
 {
     "_id": "5dcef6c19a52e726945e4ebe",
@@ -175,7 +175,7 @@ PUT http://127.0.0.1:3100/backler/api/projects/updateProject | API Actualizar al
     "projectName": "HandNote"
 }
 ```
-DELETE http://127.0.0.1:3100/backler/api/projects/deleteProject | API Eliminar algún proyecto  
+`DELETE` http://127.0.0.1:3100/backler/api/projects/deleteProject | API Eliminar algún proyecto  
 ```JSON
 {
     "_id": "5c4f2270ef25fb3ba441f54b"
@@ -183,24 +183,24 @@ DELETE http://127.0.0.1:3100/backler/api/projects/deleteProject | API Eliminar a
 ```
 - ### Tokens
 APIs de los Bearer Tokens para la seguridad  
-POST http://127.0.0.1:3100/backler/api/tokens/newToken | API Crear un nuevo token
+`POST` http://127.0.0.1:3100/backler/api/tokens/newToken | API Crear un nuevo token
 ```JSON
 {
     "projectName":"HandNote",
 	"user":"afloress"
 }
 ```
-GET http://127.0.0.1:3100/backler/api/tokens/tokensList /API Lista de tokens, requiere token  
+`GET` http://127.0.0.1:3100/backler/api/tokens/tokensList /API Lista de tokens, requiere token  
 - ### Functions
 APIs de las funciones especiales que se requieren para los respaldos  
-GET http://127.0.0.1:3100/backler/api/functions/runScript | API Para realizar los respaldos de todos los proyectos  
-GET http://localho127.0.0.1:3100/backler/api/functions/runbyId/5dcef6c19a52e726945e4ebe | API Para respaldar un proyecto, por el ID  
-GET http://127.0.0.1:3100/backler/api/functions/runbyName/HandNote | API Para respaldar un proyecto, por el nombre
-GET http://127.0.0.1:3100/backler/api/functions/download/5dcef6c19a52e726945e4ebe | API Para descargar el respaldo de un proyecto, por el ID  
-GET http://127.0.0.1:3100/backler/api/functions/testConnection/5dcef6c19a52e726945e4ebe | API Para hacer un test de conexión a la VM del proyecto
+`GET` http://127.0.0.1:3100/backler/api/functions/runScript | API Para realizar los respaldos de todos los proyectos  
+`GET` http://localho127.0.0.1:3100/backler/api/functions/runbyId/5dcef6c19a52e726945e4ebe | API Para respaldar un proyecto, por el ID  
+`GET` http://127.0.0.1:3100/backler/api/functions/runbyName/HandNote | API Para respaldar un proyecto, por el nombre
+`GET` http://127.0.0.1:3100/backler/api/functions/download/5dcef6c19a52e726945e4ebe | API Para descargar el respaldo de un proyecto, por el ID  
+`GET` http://127.0.0.1:3100/backler/api/functions/testConnection/5dcef6c19a52e726945e4ebe | API Para hacer un test de conexión a la VM del proyecto
 - ### Directory
 APIs del controllador de directorio en el cual se realizaran y guardaran los respaldos de los proyectos  
-POST http://127.0.0.1:3100/backler/api/directory/newDirectory | API Para crear el directorio en el cual se guardaran los respaldos  
+`POST` http://127.0.0.1:3100/backler/api/directory/newDirectory | API Para crear el directorio en el cual se guardaran los respaldos  
 ```JSON
 {
     "directoryPath": "/srv",
@@ -218,14 +218,14 @@ POST http://127.0.0.1:3100/backler/api/directory/newDirectory | API Para crear e
     ]
 }
 ```
-GET http://127.0.0.1:3100/backler/api/directory/dirList | API Lista del directorio y datos de los proyectos  
-PUT http://127.0.0.1:3100/backler/api/directory/updateDir/5da60142dcfc0210581566a0 | API Para actualizar el directorio del respaldo de los proyectos 
+`GET` http://127.0.0.1:3100/backler/api/directory/dirList | API Lista del directorio y datos de los proyectos  
+`PUT` http://127.0.0.1:3100/backler/api/directory/updateDir/5da60142dcfc0210581566a0 | API Para actualizar el directorio del respaldo de los proyectos 
 ```JSON
 {
     "directoryPath": "/srv/respaldos"
 }
 ```
-DELETE http://127.0.0.1:3100/backler/api/directory/deleteDir/5d64062109cafa174c5bdba4 | API Para eliminar el registro de algún directorio  
+`DELETE` http://127.0.0.1:3100/backler/api/directory/deleteDir/5d64062109cafa174c5bdba4 | API Para eliminar el registro de algún directorio  
 ## Configuración 
 ### Configuración de Backler
 
@@ -269,7 +269,9 @@ IP_API = 127.0.0.1:3100
 ```
 ## Uso
 ### Manual de usuario final
-![Ejemplo](https://github.com/AllieMichell/Backler/blob/master/public/images/logo-Buckler.png)
+![Ejemplo](https://github.com/AllieMichell/Backler/blob/master/public/images/img-readme/1.png)  
+
+
 
 ## Créditos
 ### Alummnos
@@ -282,7 +284,7 @@ Adrian Zabdiel Sanchez Treviño
 ### Universidad
 Universidad Tecmilenio 
 ### Materia 
-Taller de productividad basada en herramientas tecnológicas
+Taller de Productividad Basada en Herramientas Tecnológicas
 ### Profesor
 Juan Carlos 
 ### Licencia
