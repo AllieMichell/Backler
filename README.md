@@ -1,4 +1,7 @@
 # Backler
+
+![Logo](https://github.com/AllieMichell/Backler/blob/master/public/images/img-readme/logo.png)
+
 ## 1.- Genera resumen ejecutivo
 Backler es una aplicación web que tiene como finalidad el lograr ayudar a las compañías a tener un control alterno del respaldo de sus bases de datos, si bien existe la posibilidad de habilitar nodos de nuestros servicios de bases de datos para que esta subsista si es que en algún momento se pierde el nodo principal, sin embargo, con nuestra propuesta buscamos mantener y realizar los respaldos de bases de datos mediante DUMPS de las mismas, de forma que si se llegaran a perder con un Restore lograríamos poner en producción nuevamente nuestras bases de datos.
 
@@ -269,10 +272,34 @@ IP_API = 127.0.0.1:3100
 ```
 ## Uso
 ### Manual de usuario final
-![Ejemplo](https://github.com/AllieMichell/Backler/blob/master/public/images/img-readme/1.png)  
+![Img1](https://github.com/AllieMichell/Backler/blob/master/public/images/img-readme/1.png)
 
+- Ingresar a la aplicación de Backler  
+- Visualizar la pantalla de inicio ( Dashboard )  
+- Si se desea realizar un backup  en la pantalla principal se mostrará un botón con la palabra “Backup” que nos servirá para realizar backups en el momento.  
+- Cuando realicemos nuestros backups en la parte inferior se mostrará una tabla con los registros de cada base de datos respaldada. 
 
+![Img2](https://github.com/AllieMichell/Backler/blob/master/public/images/img-readme/2.png)
 
+- En la sección de databases podremos visualizar una lista de nuestras bases  de datos registradas.
+- Podemos ver que cada base de datos tiene  2 acciones a realizar o 2 call to actions la primera “see more” nos permite ver un detalle más a fondo de nuestras bases de datos y sus logs de los respaldos hechos , la segunda es “Download”  esta funcionalidad nos ayudará a descargar el ultimo dump de cada base de datos.
+
+![Img3](https://github.com/AllieMichell/Backler/blob/master/public/images/img-readme/3.png)
+
+- Al entrar a la /project-backup/ vista para ver el detalle de cada base de datos podremos ver otras 3 acciones que servirán únicamente en una base de datos en particular  la primera nos ayuda a realizar un backup individual de esa base de datos en particular, la segunda que contiene el icono de un lápiz nos ayuda a poder editar la información de nuestra base de datos, y la tercera acción nos ayuda probar la conexión a nuestra base de datos remotamente.
+
+![Img4](https://github.com/AllieMichell/Backler/blob/master/public/images/img-readme/4.png)
+
+- En la pantalla /add/ podrás llenar un formulario para añadir una nueva configuración de base de datos que será respaldada en un futuro  en este formulario tendrás que ingresar los siguientes datos:
+Database Name, Project Name, Database Ip, Database type, Database password, server host, server name, server password, server port.
+## Roadmap
+### Requerimientos que se implementarán en un futuro.
+- Sesiones para diferentes niveles de usuarios en la aplicación
+- Automatizar también los restore de bases de datos en caso de una pérdida de información
+- Dashboard que nos ayude a visualizar la información de los backups de manera semanal, mensual y anual
+- Poder registrar configuración de otros tipos de bd  como oracle
+- Añadir seguridad al acceso de la información de las bases de datos
+- Realizar una versión de escritorio de dicha aplicación que se conecte con la versión web
 ## Créditos
 ### Alummnos
 Jose Angel Abner Anzures Estrada  
@@ -286,6 +313,6 @@ Universidad Tecmilenio
 ### Materia 
 Taller de Productividad Basada en Herramientas Tecnológicas
 ### Profesor
-Juan Carlos 
+Juan Carlos Espinosa Ceniceros
 ### Licencia
 MIT
