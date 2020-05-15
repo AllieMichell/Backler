@@ -1,7 +1,5 @@
 # Backler
 
-![Logo](https://github.com/AllieMichell/Backler/blob/master/public/images/img-readme/logo.png)
-
 ## 1.- Genera resumen ejecutivo
 Backler es una aplicación web que tiene como finalidad el lograr ayudar a las compañías a tener un control alterno del respaldo de sus bases de datos, si bien existe la posibilidad de habilitar nodos de nuestros servicios de bases de datos para que esta subsista si es que en algún momento se pierde el nodo principal, sin embargo, con nuestra propuesta buscamos mantener y realizar los respaldos de bases de datos mediante DUMPS de las mismas, de forma que si se llegaran a perder con un Restore lograríamos poner en producción nuevamente nuestras bases de datos.
 
